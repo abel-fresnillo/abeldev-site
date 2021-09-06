@@ -59,21 +59,13 @@ enableEmoji = true
         title = ""
         weight = 3
       [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
         name = "About"
         url = "/about/"
         title = ""
-        weight = 5
+        weight = 4
     [languages.en.params]
       # site description
       description = "Abel Fresnillo Silva - Personal website"
@@ -102,13 +94,13 @@ enableEmoji = true
         [languages.en.params.home.profile]
           enable = true
           # Gravatar Email for preferred avatar in home page
-          gravatarEmail = "me@abel.dev"
+          gravatarEmail = ""
           # URL of avatar shown in home page
-          avatarURL = "/images/abel.jpeg"
+          avatarURL = "/images/abel.png"
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Abel Fresnillo Silva"
           # subtitle shown in home page
-          subtitle = "Abel Fresnillo Silva - Software Architect"
+          subtitle = "Software Architect"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -122,10 +114,10 @@ enableEmoji = true
           paginate = 6
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "https://github.com/abel-fresnillo"
-        Linkedin = "https://www.linkedin.com/in/abel-fresnillo/"
-        Twitter = "https://twitter.com/abel_fresnillo"
-        Youtubechannel = "https://www.youtube.com/channel/UCxi4UXNHuvr__rQ88fQUBVg"
+        GitHub = "abel-fresnillo"
+        Linkedin = "abel-fresnillo"
+        Twitter = "abel_fresnillo"
+        Youtubechannel = "UCxi4UXNHuvr__rQ88fQUBVg"
         Email = "me@abel.dev"
 
 [params]
@@ -178,7 +170,6 @@ enableEmoji = true
     license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
   # Section (all posts) page config
-  # Section (所有文章) 页面配置
   [params.section]
     # special amount of posts in each section page
     paginate = 20
@@ -272,7 +263,6 @@ enableEmoji = true
       # 是否添加 FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
       fullscreen = true
     # Social share links in post page
-    # 文章页面的分享信息设置
     [params.page.share]
       enable = true
       Twitter = true
@@ -303,18 +293,14 @@ enableEmoji = true
       Trello = false
       Mix = false
     # Comment config
-    # 评论系统设置
     [params.page.comment]
       enable = true
       # Disqus comment config (https://disqus.com/)
-      # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
         enable = false
         # Disqus shortname to use Disqus in posts
-        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
         shortname = ""
       # Gitalk comment config (https://github.com/gitalk/gitalk)
-      # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
         enable = false
         owner = ""
@@ -322,7 +308,6 @@ enableEmoji = true
         clientId = ""
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
-      # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = true
         appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
@@ -341,11 +326,6 @@ enableEmoji = true
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
         # located in "themes/LoveIt/assets/data/emoji/" directory
         # you can store your own data files in the same path under your project:
-        # "assets/data/emoji/"
-        # emoji 数据文件名称, 默认是 "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
         # "assets/data/emoji/"
         emoji = ""
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
@@ -382,34 +362,26 @@ enableEmoji = true
         lightTheme = "github-light"
         darkTheme = "github-dark"
     # Third-party library config
-    # 第三方库配置
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavascript = "some.js"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
         # someJavascript = "https://cdn.example.com/some.js"
     # Page SEO config
-    # 页面 SEO 配置
     [params.page.seo]
       # image URL
-      # 图片 URL
       images = []
       # Publisher info
-      # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/avatar.png"
+        logoUrl = "/images/abel.png"
 
   # TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 100
+    speed = 50
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
