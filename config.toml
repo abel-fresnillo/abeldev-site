@@ -1,5 +1,5 @@
 baseURL = "https://abel.dev"
-relativeURLs = "true"
+#relativeURLs = "true"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
@@ -14,6 +14,16 @@ enableRobotsTXT = true
 enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
+
+[deployment]
+  order = [".jpg$", ".gif$"]
+  [[deployment.targets]]
+    name = "abeldev-deployment"
+    URL = "s3://abel.dev?region=us-east-1"
+    #cloudFrontDistributionID = E1YAYFBE64ZINO
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true
 
 [languages]
   [languages.en]
