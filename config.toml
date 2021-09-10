@@ -1,4 +1,5 @@
 baseURL = "https://abel.dev"
+relativeURLs = "true"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme

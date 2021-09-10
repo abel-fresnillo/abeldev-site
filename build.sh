@@ -1,2 +1,2 @@
-rm -rf ./public;
-hugo
+rm -rf public;
+hugo -t LoveIt;
